@@ -5,35 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
         body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-        .w3-row-padding img {margin-bottom: 12px}
-        .logo {margin-top: 8vh;;}
-        .header {height: 100vh;}
-        /* Remove margins from "page content" on small screens */
+        #header {height: 100vh;}
+        #logo {
+            width: 35%;
+            margin-top: 15vh;
+        }
+        .display-container {padding: 8vh 0;}
+        .menu-wrapper {padding: 0 8vh;}
+        .insta-button {background-color: #FFBDAC;}
+        .material-icons.md-36 { font-size: 36px; }
+        .material-icons.md-light { color: rgba(255, 255, 255, 1); }
+        a {text-decoration: none;
+        
+        }
+        h1 {margin: 0;}
+
+        .button-wrapper {
+            padding: 90px;
+            font-size: 20px;
+            color: white;
+            font-weight: bolder;
+            }
         @media only screen and (max-width: 600px) {
-            #main {margin-left: 0}
-            .logo {margin-top: 25vh;;}
+            #logo {width: 75%;}
+            .display-container {padding: 0;}
+            .display-item {padding: 4vh 0;}
+            .button-wrapper {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 80vh;
+            left: 8vw;
+            padding: 50px 30px;
+            font-size: 20px;
+            }          
+        }
+
+        @media only screen and (min-width: 601px) and (max-width: 993px) {
+            .button-wrapper {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 80vh;
+            left: 5vw;
+            padding: 50px;
+            font-size: 20px;
+            }
         }
     </style>
     <body class="w3-white">
-<!-- Navbar (sit on top) -->
+        
+            
 <!-- Page Content -->
-        <div class="w3-padding-large" id="main">
+        <div class="" id="main">
+<!-- Small Screen Order Now Button -->
+            <div class="w3-hide-large button-wrapper">
+                <a href="https://www.instagram.com/fablebakeryuk/" class="w3-button w3-round-large w3-padding-16 insta-button material-icons md-36 md-light">shopping_bag</a>
+            </div>
 <!-- Header/Home -->
-            <header class="w3-container w3-padding-32 w3-center w3-white logo header" id="home">
-                <img src="logo.svg" alt="boy" class="w3-image" width="750" >
+            <header class="w3-center " id="header">
+                <img src="logo.svg" alt="boy" class="w3-image" id="logo" >     
+<!--    Large Order Now Button -->
+            <div class="w3-hide-small w3-hide-medium button-wrapper">
+                <a href="https://www.instagram.com/fablebakeryuk/" class="w3-button w3-round-large w3-padding-16 insta-button">Order Now</a>
+            </div>
             </header>
 <!-- Bespoke Cakes -->
-            <div class="w3-row w3-padding-64" id="cakes">
+            <div class="w3-row display-container" id="cakes">
 <!-- Cakes Image -->
-                <div class="w3-col l6 w3-padding-large w3-center">
+                <div class="w3-half display-item w3-center">
                     <img src="vintage-cake.jpg" class="w3-round w3-image" alt="Vintage Cake" style="width:75%">
                 </div>
 <!-- Cakes Menu -->
-                <div class="w3-col l6 w3-padding-large w3-responsive">
-                    <h1 class="w3-center">Bespoke Cakes</h1><br>
+                <div class="w3-half display-item menu-wrapper w3-center">
+                    <h1 class="">Bespoke Cakes</h1><br>
                     <table class="w3-table w3-centered w3-striped w3-bordered">
                         <tr>
                             <th>Round Cake Size</th>
@@ -76,10 +123,10 @@
             </div>
             <hr>
 <!-- Cupcakes -->
-            <div class="w3-row w3-padding-64" id="cupcakes">
+            <div class="w3-row display-container" id="cupcakes">
 <!-- Cupcakes Menu-->   
-                <div class="w3-col l6 w3-padding-large w3-responsive">
-                    <h1 class="w3-center">Cupcakes</h1><br>
+                <div class="w3-half display-item menu-wrapper w3-center">
+                    <h1 class="">Cupcakes</h1><br>
                     <table class="w3-table w3-centered w3-striped w3-bordered">
                         <tr>
                             <th>Flavour</th>
@@ -93,28 +140,28 @@
                             <td>£23</td>
                             <td>£34</td>
                             <td>£44</td>
-                            <td>X</td>
+                            <td>&#10003</td>
                         </tr>
                         <tr>
                             <td>Chocolate</td>
                             <td>£23</td>
                             <td>£34</td>
                             <td>£44</td>
-                            <td>X</td>
+                            <td>&#10003</td>
                         </tr>
                         <tr>
                             <td>Chocolate Orange</td>
                             <td>£24</td>
                             <td>£35</td>
                             <td>£46</td>
-                            <td>X</td>
+                            <td>&#10003</td>
                         </tr>
                         <tr>
                             <td>Mint Chocolate</td>
                             <td>£24</td>
                             <td>£35</td>
                             <td>£46</td>
-                            <td>X</td>
+                            <td>&#10003</td>
                         </tr>
                         <tr>
                             <td>Lemon Drizzle</td>
@@ -135,25 +182,25 @@
                             <td>£24</td>
                             <td>£35</td>
                             <td>£46</td>
-                            <td>X</td>
+                            <td>&#10003</td>
                         </tr>
                     </table>
                 </div>
 <!-- Cupcakes Image -->
-                <div class="w3-col l6 w3-padding-large w3-center">
+                <div class="w3-half display-item w3-center">
                     <img src="cupcake.png" class="w3-round w3-image" alt="Yellow Cupcake Icing" style="width:75%">
                 </div>
             </div>
             <hr>
 <!-- Cuptails -->
-            <div class="w3-row w3-padding-64" id="cuptails">
+            <div class="w3-row display-container" id="cuptails">
 <!-- Cuptails Image -->
-                <div class="w3-col l6 w3-padding-large w3-center">
+                <div class="w3-half display-item w3-center">
                     <img src="cuptails.png" class="w3-round w3-image" alt="Cupcake" style="width:75%">
                 </div>
 <!-- Cuptails Menu -->
-                <div class="w3-col l6 w3-padding-large w3-responsive">
-                    <h1 class="w3-center">Cuptails</h1><br>
+                <div class="w3-half display-item menu-wrapper w3-center">
+                    <h1 class="">Cuptails</h1><br>
                     <table class="w3-table w3-striped w3-bordered">
                         <tr>
                             <th>Flavour</th>
@@ -184,10 +231,10 @@
             </div>
             <hr>
 <!-- Sweet Buns -->
-            <div class="w3-row w3-padding-64" id="sweet-buns">
+            <div class="w3-row display-container" id="sweet-buns">
 <!-- Buns Menu-->   
-                <div class="w3-col l6 w3-padding-large w3-responsive">
-                    <h1 class="w3-center">Sweet Buns</h1><br>
+                <div class="w3-half display-item menu-wrapper w3-center">
+                    <h1 class="">Sweet Buns</h1><br>
                     <table class="w3-table w3-striped w3-bordered">
                         <tr>
                             <th>Bun</th>
@@ -231,69 +278,69 @@
                     </table>
                 </div>
 <!-- Buns Image -->
-                <div class="w3-col l6 w3-padding-large w3-center">
+                <div class="w3-half display-item w3-center">
                     <img src="sweet-bun.png" class="w3-round w3-image" alt="Yellow Cupcake Icing" style="width:75%">
                 </div>
             </div>
             <hr>
 <!-- Sweet Bread Loaves -->
-        <div class="w3-row w3-padding-64" id="sweet-loaves">
+            <div class="w3-row display-container" id="sweet-loaves">
 <!-- Sweet Bread Loaves Image -->
-            <div class="w3-col l6 w3-padding-large w3-center">
-                <img src="sweet-loaf.png" class="w3-round w3-image" alt="Cupcake" style="width:75%">
-            </div>
+                <div class="w3-half display-item w3-center">
+                    <img src="sweet-loaf.png" class="w3-round w3-image" alt="Cupcake" style="width:75%">
+                </div>
 <!-- Sweet Bread Loaves Menu -->
-            <div class="w3-col l6 w3-padding-large w3-responsive">
-                <h1 class="w3-center">Sweet Bread Loaves</h1><br>
-                <table class="w3-table w3-striped w3-bordered">
-                    <tr>
-                        <th>Loaf</th>
-                        <th>Description</th>
-                        <th>Price</th>
-                    </tr>
-                    <tr>
-                        <td>Nutella Babka</td>
-                        <td>A sweet, braided bread which originates from Poland.</td>
-                        <td>£12.50</td>
-                    </tr>
-                </table>
+                <div class="w3-half display-item menu-wrapper w3-center">
+                    <h1 class="">Sweet Bread Loaves</h1><br>
+                    <table class="w3-table w3-striped w3-bordered">
+                        <tr>
+                            <th>Loaf</th>
+                            <th>Description</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>Nutella Babka</td>
+                            <td>A sweet, braided bread which originates from Poland.</td>
+                            <td>£12.50</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-        </div>
-        <hr>
+            <hr>
 <!-- Brownie Slabs -->
-        <div class="w3-row w3-padding-64" id="brownie-slabs">
+            <div class="w3-row display-container" id="brownie-slabs">
 <!-- Brownie Menu-->   
-            <div class="w3-col l6 w3-padding-large w3-responsive">
-                <h1 class="w3-center">Brownie Slabs</h1><br>
-                <table class="w3-table w3-striped w3-bordered">
-                    <tr>
-                        <th>Flavour</th>
-                        <th>Price</th>
-                    </tr>
-                    <tr>
-                        <td>Plain Chocolate</td>
-                        <td>£12</td>
-                    </tr>
-                    <tr>
-                        <td>Chocolate Orange</td>
-                        <td>£12</td>
-                    </tr>
-                    <tr>
-                        <td>Biscoff</td>
-                        <td>£13</td>
-                    </tr>
-                    <tr>
-                        <td>Bourbon & Coffee</td>
-                        <td>£13</td>
-                    </tr>
-                </table>
+                <div class="w3-half display-item menu-wrapper w3-center">
+                    <h1 class="">Brownie Slabs</h1><br>
+                    <table class="w3-table w3-striped w3-bordered">
+                        <tr>
+                            <th>Flavour</th>
+                            <th>Price</th>
+                        </tr>
+                        <tr>
+                            <td>Plain Chocolate</td>
+                            <td>£12</td>
+                        </tr>
+                        <tr>
+                            <td>Chocolate Orange</td>
+                            <td>£12</td>
+                        </tr>
+                        <tr>
+                            <td>Biscoff</td>
+                            <td>£13</td>
+                        </tr>
+                        <tr>
+                            <td>Bourbon & Coffee</td>
+                            <td>£13</td>
+                        </tr>
+                    </table>
+                </div>
+<!-- Brownie Image -->
+                <div class="w3-half display-item w3-center">
+                    <img src="brownie.png" class="w3-round w3-image" alt="Hand reaching for stacked brownies from above" style="width:75%">
+                </div>
             </div>
-    <!-- Brownie Image -->
-            <div class="w3-col l6 w3-padding-large w3-center">
-                <img src="brownie.png" class="w3-round w3-image" alt="Yellow Cupcake Icing" style="width:75%">
-            </div>
-        </div>
-        <hr>
+            <hr>
         </div>
 <!-- END PAGE CONTENT -->
     </body>
