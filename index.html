@@ -10,6 +10,7 @@
     <style>
         body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
         #header {height: 100vh;}
+        .social-icon {max-height: 30px;}
         #logo {
             width: 35%;
             margin-top: 15vh;
@@ -58,10 +59,24 @@
             
 <!-- Page Content -->
         <div class="" id="main">
+<!-- Navigation Bar Large-->
+            <nav class="w3-bar">
+                <a href="https://www.facebook.com/fablebakeryuk/" class="w3-bar-item w3-button w3-padding-16"><img src="facebook.png" alt="Instagram logo" class="social-icon"></a>
+                <a href="https://www.instagram.com/fablebakeryuk/" class="w3-bar-item w3-button w3-padding-16"><img src="instagram.png" alt="Instagram logo" class="social-icon"></a>
+                <a href="about-us.html" class="w3-bar-item w3-button w3-hide-small w3-padding-16 w3-right">About Us</a>
+                <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-16 w3-right ">Home</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+            </nav>
+<!-- Navigation Bar Small-->
+            <div id="demo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+                <a href="index.html" class="w3-bar-item w3-button">Home</a>
+                <a href="about-us.html" class="w3-bar-item w3-button">About Us</a>
+            </div>
 <!-- Small Screen Order Now Button -->
             <div class="w3-hide-large button-wrapper">
                 <a href="https://www.instagram.com/fablebakeryuk/" class="w3-button w3-round-large w3-padding-16 insta-button material-icons md-36 md-light">shopping_bag</a>
             </div>
+
 <!-- Header/Home -->
             <header class="w3-center " id="header">
                 <img src="logo.svg" alt="boy" class="w3-image" id="logo" >     
@@ -74,6 +89,7 @@
             <div class="w3-center " id="order-section">
                 <h1>How to Order</h1>
                 <h3>Please, head to our instagram page by clicking on the Shop Now button and message us to place your order! In the meanwhile, we will be working on improving our ordering system for you!</h3>
+                <h3>Don't have a Instagram account? Not to worry! You can email us on <a href="mailto:fablebakeryuk@gmail.com">fablebakeryuk@gmail.com</a> or leave a message on our <a href="https://www.facebook.com/fablebakeryuk/">Facebook</a> page.</h3>
             </div>
 <!-- Bespoke Cakes -->
             <div class="w3-row display-container" id="cakes">
@@ -346,5 +362,15 @@
             <hr>
         </div>
 <!-- END PAGE CONTENT -->
+        <script>
+        function myFunction() {
+        var x = document.getElementById("demo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+        }
+        </script>
     </body>
 </html>

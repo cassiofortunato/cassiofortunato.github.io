@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <title>Fable Bakery</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+        #header {height: 100vh;}
+        .social-icon {max-height: 30px;}
+        #main{ min-height: 100vh;}
+        .display-container {padding: 8vh 0;}
+        .menu-wrapper {padding: 0 8vh;}
+        .insta-button {background-color: #FFBDAC;}
+        .material-icons.md-36 { font-size: 36px; }
+        .material-icons.md-light { color: rgba(255, 255, 255, 1); }
+        a {text-decoration: none;}
+        h1 {margin: 0;}
+        #order-section {padding: 0 0 8vh;}
+        .button-wrapper {
+            padding: 90px;
+            font-size: 20px;
+            color: white;
+            font-weight: bolder;
+            }
+        @media only screen and (max-width: 600px) {
+            #logo {width: 75%;}
+            .display-container {padding: 0;}
+            .display-item {padding: 4vh 0;}
+            .button-wrapper {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 80vh;
+            left: 8vw;
+            padding: 50px 30px;
+            font-size: 20px;
+            }          
+        }
+
+        @media only screen and (min-width: 601px) and (max-width: 993px) {
+            .button-wrapper {
+            position: -webkit-sticky;
+            position: sticky;
+            top: 80vh;
+            left: 5vw;
+            padding: 50px;
+            font-size: 20px;
+            }
+        }
+    </style>
+    <body class="w3-white">
+        
+            
+<!-- Page Content -->
+        <div id="main">
+<!-- Navigation Bar Large-->
+            <nav class="w3-bar">
+                <a href="https://www.facebook.com/fablebakeryuk/" class="w3-bar-item w3-button w3-padding-16"><img src="facebook.png" alt="Instagram logo" class="social-icon"></a>
+                <a href="https://www.instagram.com/fablebakeryuk/" class="w3-bar-item w3-button w3-padding-16"><img src="instagram.png" alt="Instagram logo" class="social-icon"></a>
+                <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-16 w3-right">About Us</a>
+                <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-padding-16 w3-right ">Home</a>
+                <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="myFunction()">&#9776;</a>
+            </nav>
+<!-- Navigation Bar Small-->
+            <div id="demo" class="w3-bar-block w3-hide w3-hide-large w3-hide-medium">
+                <a href="index.html" class="w3-bar-item w3-button">Home</a>
+                <a href="#" class="w3-bar-item w3-button">About Us</a>
+            </div>
+<!-- Small Screen Order Now Button -->
+            <div class="w3-hide-large button-wrapper">
+                <a href="https://www.instagram.com/fablebakeryuk/" class="w3-button w3-round-large w3-padding-16 insta-button material-icons md-36 md-light">shopping_bag</a>
+            </div>
+<!-- About Us Section -->
+            <div class="w3-row display-container" id="about-us">
+    <!-- Brownie Menu-->   
+                <div class="w3-half display-item menu-wrapper w3-center">
+                    <div class="w3-center " id="order-section">
+                        <h1>About Us</h1>
+                        <h3>Fable Bakery is a small vegan home-based bakery located on Barry Island. We specialise in cakes and sweet breads. We also offer a range of gluten-free products. All our products are prepared in a vegan kitchen.</h3>
+                        <h3>For large events such as weddings and parties, please provide reasonable notice by contacting us via email or social media.</h3>
+                        <h3>Let’s make your day special!</h3>
+                    </div>
+                </div>
+    <!-- Brownie Image -->
+                <div class="w3-half display-item w3-center">
+                    <img src="about-us.jpg" class="w3-round w3-image" alt="Woman holding sweet bread" style="width:75%">
+                </div>
+            </div>
+        </div>
+<!-- END PAGE CONTENT -->
+        <script>
+        function myFunction() {
+        var x = document.getElementById("demo");
+        if (x.className.indexOf("w3-show") == -1) {
+            x.className += " w3-show";
+        } else { 
+            x.className = x.className.replace(" w3-show", "");
+        }
+        }
+        </script>
+    </body>
+</html>
